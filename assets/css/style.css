@@ -1,0 +1,296 @@
+/**
+ * استایلهای اصلی سیستم پیامرسانی
+ * @author RoOtIt-dev
+ * @since 2025-02-13 07:33:38
+ */
+
+/* استایل های عمومی */
+.msg-system-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+/* گرید انتخاب گروه */
+.group-selector {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+
+.group-selector > * {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(33.333% - 1rem);
+    flex: 0 0 calc(33.333% - 1rem);
+    margin: 0.5rem;
+}
+
+/* گرید پیوست ها */
+.attachment-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+
+.attachment-container > * {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(50% - 1rem);
+    flex: 0 0 calc(50% - 1rem);
+    margin: 0.5rem;
+}
+
+/* نوار آمار */
+.msg-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.msg-stats > * {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 200px;
+    flex: 1 1 200px;
+    margin: 0.5rem;
+}
+
+/* فرم ارسال پیام */
+.msg-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.msg-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.msg-form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.msg-form-input,
+.msg-form-textarea,
+.msg-form-select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.msg-form-input:focus,
+.msg-form-textarea:focus,
+.msg-form-select:focus {
+    border-color: #0073aa;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,115,170,0.1);
+}
+
+/* دکمه‌ها */
+.msg-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.msg-btn-primary {
+    background: #0073aa;
+    color: #fff;
+}
+
+.msg-btn-primary:hover {
+    background: #005177;
+}
+
+.msg-btn-secondary {
+    background: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.msg-btn-secondary:hover {
+    background: #e9ecef;
+}
+
+/* جدول پیام‌ها */
+.msg-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.msg-table th,
+.msg-table td {
+    padding: 1rem;
+    text-align: right;
+}
+
+.msg-table th {
+    background: #f8f9fa;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+}
+
+.msg-table td {
+    border-bottom: 1px solid #eee;
+}
+
+.msg-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* نشانگر وضعیت */
+.msg-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.msg-status-unread {
+    background: #ffe9e9;
+    color: #e74c3c;
+}
+
+.msg-status-read {
+    background: #e9ffe9;
+    color: #2ecc71;
+}
+
+.msg-status-replied {
+    background: #e9f5ff;
+    color: #3498db;
+}
+
+/* پیوست‌ها */
+.msg-attachment {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.msg-attachment-icon {
+    margin-left: 0.5rem;
+    color: #666;
+}
+
+.msg-attachment-name {
+    flex: 1;
+}
+
+.msg-attachment-size {
+    color: #666;
+    font-size: 0.875rem;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .group-selector > * {
+        -ms-flex-preferred-size: calc(50% - 1rem);
+        flex-basis: calc(50% - 1rem);
+    }
+    
+    .msg-form {
+        padding: 1.5rem;
+    }
+    
+    .msg-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .group-selector > * {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    
+    .attachment-container > * {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    
+    .msg-form {
+        padding: 1rem;
+    }
+    
+    .msg-btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* انیمیشن‌ها */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.msg-fade-in {
+    animation: fadeIn 0.3s ease;
+}
+
+/* لودینگ */
+.msg-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

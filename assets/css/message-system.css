@@ -1,0 +1,202 @@
+/* استایل‌های کلی فرم */
+.msg-system-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.msg-form-wrapper {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* استایل select و input ها */
+.form-control,
+select,
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* استایل بخش انتخاب گروه */
+#group-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* استایل بخش انتخاب کاربر */
+.user-selection {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.user-search-container {
+    position: relative;
+}
+
+/* استایل ویرایشگر */
+.wp-editor-wrap {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.wp-editor-container {
+    border: none !important;
+}
+
+/* استایل بخش آپلود */
+.attachment-section {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    background: #f9f9f9;
+    margin: 20px 0;
+}
+
+.attachment-dropzone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 15px;
+}
+
+.attachment-dropzone:hover {
+    border-color: #2196F3;
+    background: #E3F2FD;
+}
+
+.selected-files {
+    margin-top: 15px;
+}
+
+.selected-file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+/* استایل دکمه‌ها */
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.msg-submit-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.msg-reset-btn {
+    background: #f44336;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* استایل لودینگ */
+.btn-loading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ffffff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* اضافه کردن استایل برای آیکون آپلود */
+.dashicons-upload {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* استایل برای حالت drag & drop */
+.attachment-dropzone.dragover {
+    border-color: #2196F3;
+    background-color: rgba(33, 150, 243, 0.1);
+}
+
+/* استایل برای ویرایشگر */
+.wp-editor-wrap {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.wp-editor-container {
+    border: none !important;
+}
+
+/* استایل برای نمایش خطا و موفقیت */
+.msg-error,
+.msg-system-error {
+    background-color: #ffebee;
+    border: 1px solid #ef5350;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.msg-success,
+.msg-system-success {
+    background-color: #e8f5e9;
+    border: 1px solid #66bb6a;
+    color: #2e7d32;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
